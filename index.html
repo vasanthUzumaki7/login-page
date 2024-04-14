@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css">
+    
+</head>
+<body>
+    <div class="login-form">
+        <form class="form1">
+        <h1>Login</h1>
+        <input class="form-input" type="text" placeholder="Username">
+        <input class="form-input" type="text" placeholder="Password">
+        <div class="inner-box">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <p class="p1" onclick="toggleCheckbox()">Remember me</p>
+            <p class="p2">Forget Password?</p>
+        </div>
+        <button type="submit">Login</button>
+        <a class="p3" href="Register.html">I Dont have an account?Register</a>
+    </form>
+    </div>
+    <script>
+    
+  function toggleCheckbox() {
+    let checkbox = document.getElementById("checkbox");
+    checkbox.checked = !checkbox.checked;
+  }
+    </script>
+</body>
+</html>
